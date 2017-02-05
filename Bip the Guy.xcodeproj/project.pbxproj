@@ -414,6 +414,7 @@
 				B929FD6D1E463B6D00D2EBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B929FD6E1E463B6D00D2EBF3 /* Build configuration list for PBXNativeTarget "Bip the GuyTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				B929FD701E463B6D00D2EBF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

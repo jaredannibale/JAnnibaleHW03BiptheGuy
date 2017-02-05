@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,34 +21,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="nq8-mj-eNo">
-                                <rect key="frame" x="16" y="20" width="343" height="457"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="nq8-mj-eNo">
+                                <rect key="frame" x="16" y="89" width="343" height="457"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="cd3-sl-ER7" appends="YES" id="SFe-ci-fSt"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Image to Punch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yZ-ri-aYT">
-                                <rect key="frame" x="84" y="485" width="206" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose Image to Punch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yZ-ri-aYT">
+                                <rect key="frame" x="84" y="568" width="206" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0re-vW-7YY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UES-Cl-1w1">
-                                <rect key="frame" x="88" y="521" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UES-Cl-1w1">
+                                <rect key="frame" x="88" y="611" width="199" height="0.0"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NM5-3O-kma">
-                                        <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NM5-3O-kma">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="0.0"/>
                                         <state key="normal" title="Photo Library"/>
                                         <connections>
                                             <action selector="libraryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25A-CT-yWw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNL-iy-Mdt">
-                                        <rect key="frame" x="122" y="0.0" width="77" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNL-iy-Mdt">
+                                        <rect key="frame" x="122" y="0.0" width="77" height="0.0"/>
                                         <state key="normal" title="Take Photo"/>
                                         <connections>
                                             <action selector="cameraPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="540-Kd-JM8"/>
@@ -55,8 +56,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch the Image!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZu-zG-3tO">
+                                <rect key="frame" x="60" y="28" width="255" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="LZ5-0N-AwT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nq8-mj-eNo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="90A-R4-U0s"/>
+                            <constraint firstItem="8yZ-ri-aYT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="9uw-R7-D1g"/>
+                            <constraint firstItem="xZu-zG-3tO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="Bwd-5E-qxK"/>
+                            <constraint firstItem="nq8-mj-eNo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MOm-QL-Cyr"/>
+                            <constraint firstItem="nq8-mj-eNo" firstAttribute="centerX" secondItem="8yZ-ri-aYT" secondAttribute="centerX" id="alu-gg-WGK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UES-Cl-1w1" secondAttribute="bottom" constant="26" id="hQB-qR-wk8"/>
+                            <constraint firstItem="UES-Cl-1w1" firstAttribute="top" secondItem="8yZ-ri-aYT" secondAttribute="bottom" constant="22" id="m5M-BB-X8I"/>
+                            <constraint firstItem="8yZ-ri-aYT" firstAttribute="centerX" secondItem="UES-Cl-1w1" secondAttribute="centerX" id="oO7-LZ-iIU"/>
+                            <constraint firstItem="nq8-mj-eNo" firstAttribute="top" secondItem="xZu-zG-3tO" secondAttribute="bottom" constant="15" id="opW-1J-cuk"/>
+                            <constraint firstItem="8yZ-ri-aYT" firstAttribute="top" secondItem="nq8-mj-eNo" secondAttribute="bottom" constant="22" id="pCa-We-nV1"/>
+                            <constraint firstItem="xZu-zG-3tO" firstAttribute="centerX" secondItem="nq8-mj-eNo" secondAttribute="centerX" id="qOG-Xh-Eou"/>
+                            <constraint firstItem="xZu-zG-3tO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="y9y-V1-E3P"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageToPunch" destination="nq8-mj-eNo" id="Ith-Zf-VJO"/>
